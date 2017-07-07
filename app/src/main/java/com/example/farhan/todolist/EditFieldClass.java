@@ -19,7 +19,7 @@ public class EditFieldClass extends AppCompatActivity {
     public void saveButtonClicked(View v){
         String messageText = ((EditText)findViewById(R.id.message)).getText().toString();
         if(messageText.equals("")){
-
+            finish();
         }
         else{
             Intent intent = new Intent();

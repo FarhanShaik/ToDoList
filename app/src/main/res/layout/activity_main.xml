@@ -9,8 +9,8 @@
 
     <ListView
         android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         tools:layout_constraintTop_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintBottom_creator="1"
@@ -26,7 +26,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintVertical_bias="1.0"/>
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="79dp"
@@ -42,13 +42,40 @@
         android:layout_marginEnd="32dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginBottom="26dp"
-        android:layout_marginRight="32dp" />
+        android:layout_marginRight="32dp"
+        android:onClick="onClick"
+        android:id="@+id/floatingActionButton" />
+
+    <!--<Button-->
+        <!--android:id="@+id/savePref"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Save"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--tools:layout_constraintBottom_creator="1"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/loadPref"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--app:layout_constraintRight_toRightOf="parent"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:onClick="savePrefClicked"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/loadPref"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="load"-->
+        <!--tools:layout_constraintRight_creator="1"-->
+        <!--tools:layout_constraintBottom_creator="1"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"-->
+        <!--app:layout_constraintRight_toRightOf="@+id/savePref"-->
+        <!--tools:layout_constraintLeft_creator="1"-->
+        <!--android:layout_marginBottom="21dp"-->
+        <!--app:layout_constraintLeft_toLeftOf="@+id/savePref"-->
+        <!--android:onClick="loadPrefClicked"/>-->
 
 
 
-    </ListView>
-
-    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>
 
 
 
