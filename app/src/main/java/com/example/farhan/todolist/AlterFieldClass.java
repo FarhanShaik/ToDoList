@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class EditFieldClass extends AppCompatActivity {
+public class AlterFieldClass extends AppCompatActivity {
     DatabaseHelper mDatabaseHelper;
     private Button svbtn;
 
@@ -24,16 +24,14 @@ public class EditFieldClass extends AppCompatActivity {
                 String messageText = ((EditText) findViewById(R.id.message)).getText().toString();
 
 
-                if (messageText.equals("")) {
-                    finish();
-                } else {
+
                     // AddData(messageText);
                     //Boolean bool = mDatabaseHelper.addData(messageText);
                     Intent intent = new Intent();
-                    intent.putExtra(Intent_Constants.INTENT_MESSAGE_FIELD, messageText);
-                    setResult(Intent_Constants.INTENT_RESULT_CODE, intent);
+                    intent.putExtra(Intent_Constants.INTENT_MESSAGE_FIELD_2, messageText);
+                    setResult(Intent_Constants.INTENT_RESULT_CODE_2, intent);
                     finish();
-                }
+
             }
         });
 

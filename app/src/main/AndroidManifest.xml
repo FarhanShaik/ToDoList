@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".EditFieldClass"></activity>
+        <activity android:name=".AlterFieldClass"></activity>
     </application>
 
 </manifest>

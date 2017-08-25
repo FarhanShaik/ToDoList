@@ -3,14 +3,16 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.inputmethodservice.ExtractEditText
+    <EditText
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
         android:id="@+id/message"
-        android:hint="Type message here..."
+        android:hint="Type message here...\n(type nothing to delete)"
         android:textSize="20sp"
         android:gravity="top"/>
+
+
 
     <Button
         android:layout_width="match_parent"
@@ -18,5 +20,5 @@
         android:layout_weight="1"
         android:text="SAVE"
         android:textSize="20sp"
-        android:onClick="saveButtonClicked"/>
+        android:id="@+id/svbtn"/>
 </LinearLayout>
